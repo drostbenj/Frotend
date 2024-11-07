@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff - WMHS Football Team</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: green; /* Blue */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .menu-bar nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .menu-bar nav ul li {
+            margin: 0 15px;
+        }
+        .menu-bar nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .menu-bar nav ul li a:hover {
+            background-color:green; /* Darker Blue */
+        }
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: green; /* Blue */
+        }
+        .staff-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .staff-member {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: calc(33.333% - 20px);
+            transition: transform 0.3s;
+        }
+        .staff-member:hover {
+            transform: scale(1.05); /* Scale effect on hover */
+        }
+        .staff-member img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .staff-member h3 {
+            margin-bottom: 10px;
+            color: green; /* Blue */
+        }
+        .staff-member p {
+            color: #666;
+        }
+        /* Responsive Design */
+        @media screen and (max-width: 1024px) {
+            .staff-member {
+                width: calc(50% - 20px);
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .staff-member {
+                width: calc(100% - 20px);
+            }
+        }
+        .footer {
+            background-color: green; /* Blue */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        .footer p {
+            margin: 10px 0;
+        }
+        .social-media {
+            margin-top: 20px;
+        }
+        .social-media a {
+            color: white;
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .social-media a:hover {
+            color: #66bb6a; /* Greenish */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu-bar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="page.html">Login</a></li>
+                    <li><a href="meetings.html">Meetings</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="addplayers.html">Add players</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="dashboard.html">dashboard</a></li>
+                    <li><a href="achievement.html">achievements</a></li>
+                    <li><a href="coachingstaff.html">coaching staff</a></li>
+                    <li><a href="teachers.html">Teachers</a></li>
+                
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Meet Our Staff</h2>
+        <div class="staff-gallery">
+            <div class="staff-member">
+                <img src="Theophile.jpg" alt="Staff Member 1">
+                <h3>Staff Member 1</h3>
+                <p>Role: Coordinator</p>
+            </div>
+            <div class="staff-member">
+                <img src="Lynda.jpg" alt="Staff Member 2">
+                <h3>Staff Member 2</h3>
+                <p>Role: Administrator</p>
+            </div>
+            <div class="staff-member">
+                <img src="Honest.jpg" alt="Staff Member 3">
+                <h3>Staff Member 3</h3>
+                <p>Role: Event Manager</p>
+            </div>
+            <div class="staff-member">
+                <img src="Victor.jpg" alt="Staff Member 4">
+                <h3>Staff Member 4</h3>
+                <p>Role: Outreach Specialist</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 WMHS Football Team. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
